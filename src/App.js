@@ -1,9 +1,14 @@
-
+import { Route, Routes } from "react-router-dom";
+import Login from "./Pages/Login/Login";
+import Singup from "./Pages/Singup/Singup";
 
 function App() {
   return (
     <div>
-      <h1>Abdullah Al Mamun</h1>
+      <Routes>
+        <Route path="/" element={<Singup></Singup>}></Route>
+        <Route path="/login" element={<Login></Login>}></Route>
+      </Routes>
     </div>
   );
 }
